@@ -1,3 +1,5 @@
+# 序
+1. 本开发手册依据[阿里巴巴java开发手册(1.4)](https://yq.aliyun.com/articles/69327?spm=5176.100239.blogcont69327.158.xUUgiz&p=2#comments "https://yq.aliyun.com/articles/69327?spm=5176.100239.blogcont69327.158.xUUgiz&p=2#comments")编写，并结合php特点与公司实际情况修改。
 # 一、编程规约
 ## （1）命名风格
 
@@ -507,5 +509,5 @@ net . ipv 4. tcp _ fin _ timeout = 30
 	-  确定指导后续设计与演化的原则。使后续的子系统或模块设计在规定的框架内继续演化。
 	-  确定非功能性需求。非功能性需求是指安全性、可用性、可扩展性等。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MTA1MjUyOF19
+eyJoaXN0b3J5IjpbLTU3MTcxNzg0XX0=
 -->
