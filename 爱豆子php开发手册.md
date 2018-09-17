@@ -55,7 +55,7 @@ get/set 方法中，不要增加业务逻辑，增加排查问题的难度。
 	if (condition) { 
 	return $this->data + 100; 
 	} else {
-	return$this->data - 100;
+	return $this->data - 100;
 	} 
 	}
 	```
@@ -74,15 +74,15 @@ get/set 方法中，不要增加业务逻辑，增加排查问题的难度。
 思考：如果是一个 private 的方法，想删除就删除，可是一个 public 的 service 成员方法或
 成员变量，删除一下，不得手心冒点汗吗？变量像自己的小孩，尽量在自己的视线内，变量作
 用域太大，无限制的到处跑，那么你会担心的。
-10. 当一个变量没有必要重复赋值时，不要重复赋值，导致浪费内存，应直接使用原变量。
+10. 【推荐】当一个变量没有必要重复赋值时，不要重复赋值，导致浪费内存，应直接使用原变量。
 <font color='red'>反例</font>:
-```php
-$post = $_POST;
-//对post处理数据，但是实际上根本没有必要给post赋值，直接
-if(isset($post['name'])){
+	```php
+	$post = $_POST;
+	//对post处理数据，但是实际上根本没有必要给post赋值，直接
+	if(isset($post['name'])){
 
-}
-```
+	}
+	```
 ## （5）并发处理
 1. 【强制】并发修改同一记录时，避免更新丢失，需要加锁。要么在应用层加锁，要么在缓存加
 锁，要么在数据库层使用乐观锁，使用 version 作为更新依据。
@@ -509,5 +509,5 @@ net . ipv 4. tcp _ fin _ timeout = 30
 	-  确定指导后续设计与演化的原则。使后续的子系统或模块设计在规定的框架内继续演化。
 	-  确定非功能性需求。非功能性需求是指安全性、可用性、可扩展性等。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MTcxNzg0XX0=
+eyJoaXN0b3J5IjpbLTExODEwMjkxNzMsLTU3MTcxNzg0XX0=
 -->
